@@ -1,5 +1,4 @@
 from django.urls import path
-from . import views
 from .views import PageListView, PageDetailView, PageCreateView , PageUpdateView, PageDeleteView
 
 pages_patterns = ([
@@ -8,4 +7,4 @@ pages_patterns = ([
     path('create/', PageCreateView.as_view(), name= 'create'),
     path('update/<int:pk>/', PageUpdateView.as_view(), name= 'update'),
     path('delete/<int:pk>/', PageDeleteView.as_view(), name= 'delete'),
-],'pages')
+],'pages') #Este es el que le da el nombre a la lista de paginasß
