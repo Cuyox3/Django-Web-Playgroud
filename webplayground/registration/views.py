@@ -24,7 +24,6 @@ class SignUpView(CreateView):
           return form
      
 
-@method_decorator(login_required, name='dispatch ')
+@method_decorator(login_required, name='dispatch')
 class ProfileUpdate(TemplateView): 
-
-     template_mane = 'registration/profile_form.html'
+     template_name = 'registration/profile_form.html'
